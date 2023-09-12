@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction - Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body class="details">
+    <h1>Enter Crop Prediction Details</h1>
+    <form action="/Crop_predict" method="POST">
+        <label for="N">Nitrogen (N) Content:</label>
+        <input type="number" id="N" name="N" required><br>
+        
+        <label for="P">Phosphorus (P) Content:</label>
+        <input type="number" id="P" name="P" required><br>
+        
+        <label for="K">Potassium (K) Content:</label>
+        <input type="number" id="K" name="K" required><br>
+        
+        <label for="temperature">Temperature (°C):</label>
+        <input type="number" id="temperature" name="temperature" required><br>
+        
+        <label for="humidity">Humidity (%):</label>
+        <input type="number" id="humidity" name="humidity" required><br>
+        
+        <label for="ph">Soil pH:</label>
+        <input type="number" id="ph" name="ph" step="0.01" required><br>
+        
+        <label for="rainfall">Rainfall (mm):</label>
+        <input type="number" id="rainfall" name="rainfall" required><br>
+        
+        <input type="submit" value="Predict Crop">
+    </form>
+</body>
+</html>

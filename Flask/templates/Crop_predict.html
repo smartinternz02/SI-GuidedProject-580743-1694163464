@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction - Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="predict">
+    <h1>Crop Prediction Result</h1>
+    <p>The predicted crop is:</p>
+    <p class="result-text"><strong>{{ prediction_text }}</strong></p>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>
